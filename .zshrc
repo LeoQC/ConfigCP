@@ -86,8 +86,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='nano'
 
+export EDITOR='code'
 
 [[ -s /home/leogray/.autojump/etc/profile.d/autojump.sh ]] && source /home/leogray/.autojump/etc/profile.d/autojump.sh
 
@@ -112,3 +113,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 unsetopt BG_NICE
+
+eval $(thefuck --alias)
+
+source ~/rbe3k2/catkin_ws/devel/setup.zsh
