@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/leogray/.oh-my-zsh"
@@ -21,7 +21,7 @@ ZSH_THEME="random"
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
  ZSH_THEME_RANDOM_CANDIDATES=( 
-	"robbyrussell" "avit" "bira" "amuse" "windows-zsh-theme/windows")
+	"robbyrussell" "avit" "bira" "amuse" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -70,7 +70,7 @@ ZSH_THEME="random"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
- zsh-syntax-highlighting
+  zsh-syntax-highlighting
     zsh-autosuggestions
     autojump
 )
@@ -117,3 +117,18 @@ unsetopt BG_NICE
 eval $(thefuck --alias)
 
 source ~/rbe3k2/catkin_ws/devel/setup.zsh
+
+export TURTLEBOT3_MODEL=burger
+
+# export ROS_MASTER_URI=http://rx-78-2-lx.dyn.wpi.edu:11311
+# export ROS_HOSTNAME=rx-78-2-lx.dyn.wpi.edu
+# export ROS_IP=rx-78-2-lx.dyn.wpi.edu
+
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_HOSTNAME=localhost
+
+# nico's IP
+# export ROS_MASTER_URI=http://130.215.168.90:11311
+
+# miky
+# export ROS_MASTER_URI=http://autoreg-070495.dyn.wpi.edu:11311
